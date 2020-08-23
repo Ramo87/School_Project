@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>11</zoom_level>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>0</x>
+      <y>0</y>
+      <w>1045</w>
+      <h>891</h>
+    </coordinates>
+    <panel_attributes>Aufgabe Abschlussprüfung Sommer 2018
+
+1 Ganzeinheitliche Aufgabe I - Fachqualifikation
+
+_2. Handlungsschritt (25 Pkt.) - Aufgabe a (8 Pkt.)_
+
+Die eCo GmbH soll für die Pharmalog GmbH ein Programm erstellen, mit dem Etiketten für Tee-Verpackungen gedruckt werden
+können.
+
+a) Im Lagerbereich werden auch Teemischungen hergestellt, die etikettiert werden müssen.
+    Für die objektorientierte Drucksoftware liegt ein grober, noch unvollständiger Entwurf in Form eines Klassendiagramms bereits
+    vor:
+
+    Die Instanzvariablen name und zutaten werden in den jeweiligen Konstruktoren initialisiert. Alle TeeEtikett-Klassen benötigen
+    folgende Methoden:
+
+
+
+
+
+
+
+
+
+    Folgende Aufgaben gilt es zu lösen:
+
+    aa) Ergänzen Sie im Klassendiagramm die fehlenden UML-Methodenbeschreibungen. (4 Pkt.)
+
+    ab) Erläutern Sie die Art der Beziehung zwischen den Klassen.                                     (2 Pkt.)
+    _____________________________________________________________________________________________
+	  Die abstracte Klasse TeeEtikett wird beim der KölnerBronchialTeeEtikett und KölnerMagenTeeEtikett extended.
+    _____________________________________________________________________________________________
+  Das heißt dass alle Superklasse Eigenchaften, in unsere Fall "TeeEtiket", - Attribute und Methoden 
+  (die nicht private sind), werden bei Kindsklasse oder Subklasse vererbt.  
+  Die vererbten Methoden der Superklasse können auch in der Subklasse überladen oder 
+  überschrieben werden. 
+    _____________________________________________________________________________________________
+
+    ac) Erläutern Sie die Bedeutung der abstract-Eigenschaft in Zusammenhang mit der Klasse
+          TeeEtikett und
+    _____________________________________________________________________________________________
+  In der Klasse Tee Etikett gibt es die Methode "getPreis()", die abstract ist. Eine abstracte Methode darf nur in 
+  eine abstracte Klasse definiert und darf  nicht "private" oder "final" sein.       
+    _____________________________________________________________________________________________
+    
+    _____________________________________________________________________________________________
+
+          der Methode getPreis der TeeEtikett-Klasse                                                             (2 Pkt.)
+    _____________________________________________________________________________________________
+
+    _____________________________________________________________________________________________
+    
+    _____________________________________________________________________________________________
+
+bg=#e8e8e8</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>286</y>
+      <w>231</w>
+      <h>121</h>
+    </coordinates>
+    <panel_attributes>*Funktion*
+--
+berechneVerfallsDatum
+
+--
+druckeEtikett
+--
+getPreis</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>231</x>
+      <y>286</y>
+      <w>748</w>
+      <h>121</h>
+    </coordinates>
+    <panel_attributes>*Beschreibung*
+--
+Legt für alle Teesorten in gleicher Weise die Instanzvariable verfallsDatum fest und gibt nichts
+zurück.
+--
+Erledigt für alle Teeetiketten in gleicher Weise den Ausdruck und gibt nichts zurück.
+--
+Gibt den Preis der jeweiligen Teemischung als Dezimalzahl zurück.</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>616</x>
+      <y>902</y>
+      <w>506</w>
+      <h>253</h>
+    </coordinates>
+    <panel_attributes>
+&lt;&lt;abstract&gt;&gt;
+TeeEtikett
+--
+#name : String
+#verfallsDatum : Date
+#zutaten : String[][]
+--
++berechneVerfallsDatum()
++druckeEtikett()
++getPreis() : double {abstract}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>297</x>
+      <y>1177</y>
+      <w>308</w>
+      <h>176</h>
+    </coordinates>
+    <panel_attributes>
+KölnerBronchialTeeEtikett
+
+--
+
+--
++KölnerBronchialTeeEtikett()
++KölnerBronchialTeeEtikett(String, String[][])
++getPreis() : double &lt;&lt;overriden&gt;&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1133</x>
+      <y>1177</y>
+      <w>341</w>
+      <h>176</h>
+    </coordinates>
+    <panel_attributes>
+KölnerMagenTeeEtikett
+
+--
+
+--
++KölnerMagenTeeEtikett()
++KölnerMagenTeeEtikett(String, String[][])
++getPreis() : double &lt;&lt;overriden&gt;&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>572</x>
+      <y>1144</y>
+      <w>198</w>
+      <h>55</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+&lt;&lt;extends&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;30.0;160.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>968</x>
+      <y>1144</y>
+      <w>363</w>
+      <h>55</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+&lt;&lt;extends&gt;&gt;</panel_attributes>
+    <additional_attributes>310.0;30.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>

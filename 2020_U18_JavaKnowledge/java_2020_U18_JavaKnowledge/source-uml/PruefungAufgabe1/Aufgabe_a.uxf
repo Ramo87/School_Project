@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>410</x>
+      <y>370</y>
+      <w>270</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>/Reise/
+--
+#grundPreis : double
+-reiseBeginn : Date
+--
++Reise(Date, double)
++tageBestimmen() : int
++preisBerechnen() : double
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>210</x>
+      <y>610</y>
+      <w>270</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>StandardReise
+--
+
+--
+StandardReise(Date, double)
++preisBerechnen() : double &lt;&lt; overriden &gt;&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>630</x>
+      <y>610</y>
+      <w>270</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>PremiumReise
+--
+
+--
+StandardReise(Date, double)
++preisBerechnen() : double &lt;&lt; overriden &gt;&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>60</x>
+      <y>0</y>
+      <w>950</w>
+      <h>340</h>
+    </coordinates>
+    <panel_attributes>Aufgabe Abschlussprüfung Winter 2017/2018
+
+1 Ganzeinheitliche Aufgabe I - Fachqualifikation
+
+_2. Handlungsschritt (25 Pkt.) - Aufgabe a (7 Pkt.)_
+
+Die Nord-West Reederei AG will ihren Kunden verschiedene Reisekategorien anbieten. Begonnen wird mit den Reisekategorie-
+Klassen "StandardReise" und "PremiumReise". Zur Verwaltung soll ein objektorientiertes Programm entwickelt werden.
+
+a) Ein grober, noch unvollständiger Entwurf liegt in Form eines UML-Klassendiagrammes bereits vor. Die Insanzvariablen werden
+    über den Konstruktor initialisiert. Alle Reiseklassen sollen folgende öffentliche Methoden beinhalten:
+
+    tageBestimmen: ermitteln der Anzahl der Tage bis zum Reisebeginn und gibt sie als ganze Zahl zurück.
+
+    preisBerechnen: kalkuliert mit unterschiedlichen Algorithmen für Standard- und Premiumreisen den Reisepreis aus dem Grund-
+                               preis und gibt ihn als Dezimalzahl zurück.
+
+aa) Ergänzen Sie die Beziehungen zwischen den Klassen und kennzeichnen Sie die Klasse "Reise" als nicht instanziierbar. (3 Pkt.)
+
+ab) Ergänzen Sie die Methoden tageBestimmen &amp; preisBerechnen. (4 Pkt.)
+bg=#e8e8e8</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>310</x>
+      <y>520</y>
+      <w>120</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+&lt;&lt;extends&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;90.0;100.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>670</x>
+      <y>520</y>
+      <w>140</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+&lt;&lt;extends&gt;&gt;</panel_attributes>
+    <additional_attributes>120.0;90.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>
