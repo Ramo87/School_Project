@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>9</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>99</x>
+      <y>360</y>
+      <w>270</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>...
+Reise
+--
+...
+#stornoAlgorithmus : StornoAlgorithmus
+--
+...
++setStornoAlgorithmus : void
++executeStornoBerechnen() : double</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>342</x>
+      <y>549</y>
+      <w>288</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>StrengerStornoAlgorithmus
+--
+
+--
++StrengerStornoAlgorithmus()
++stornoBerechnen(Reise) : double  &lt;&lt; override &gt;&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>711</x>
+      <y>549</y>
+      <w>189</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>KulanterStornoAlgorithmus
+--
+
+--
++KulanterStornoAlgorithmus()
++stornoBerechnen(Reise) : double  &lt;&lt; override &gt;&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>459</x>
+      <y>360</y>
+      <w>225</w>
+      <h>81</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+StornoAlgorithmus
+--
+
+--
++stornoBerechnen(Reise) : double</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>63</x>
+      <y>0</y>
+      <w>711</w>
+      <h>270</h>
+    </coordinates>
+    <panel_attributes>Aufgabe Abschlussprüfung Winter 2017/2018
+
+1 Ganzeinheitliche Aufgabe I - Fachqualifikation
+
+_2. Handlungsschritt (25 Pkt.) - Aufgabe b (6 Pkt.)_
+
+b) Die Gebühren für die Stornierung von Standardreisen und Premiumreisen werden nach unterschiedlichen
+   Algorithmen berechnet:
+   - Der strenge Algorithmus wird bei der Stornierung von Standardreisen angewendet.
+   - Der kulante Algorithmus wird sowohl bei der Stornierung von Premiumreisen als auch bei der Stornierung
+     von Standardreisen, die vom Stammkunden gebucht wurden, angewendet.
+
+   Die zu implementierende öffentliche Methode stornoBerechnen soll flexibel eingebunden werden.
+   Das folgende UML-Klassendiagamm wurde nach dem Strategie-Entwurfmuster vorbereitet.
+
+   Vervollständigen Sie das UML-Klassendiagamm, in dem Sie folgendes ergänzen:
+   - Die Beziehungen zwischen den Klassen
+   - Die Methoden in den Klassen StrengerStornoAlgorithmus und KulanterStornoAlgorithmus
+
+   
+   </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>45</x>
+      <y>702</y>
+      <w>693</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>Ergänzen Sie ..
+die Beziehungen zwischen den Klassen
+die Methoden in den Klassen StrengerStornoAlgorithmus und KulanterStornoAlgorithmus                      6 Pkt.</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>531</x>
+      <y>432</y>
+      <w>108</w>
+      <h>135</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+&lt;&lt;implements&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;130.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>666</x>
+      <y>432</y>
+      <w>153</w>
+      <h>135</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+&lt;&lt;implements&gt;&gt;</panel_attributes>
+    <additional_attributes>120.0;130.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>
