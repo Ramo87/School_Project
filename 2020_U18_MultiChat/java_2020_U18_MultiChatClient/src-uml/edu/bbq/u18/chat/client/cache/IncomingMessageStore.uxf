@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>390</x>
+      <y>300</y>
+      <w>300</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;class&gt;&gt;
+IncomingMessageStore
+--
+-instance: IncomingMessageStore
+--
+-IncomingMessageStore() : Singleton
++getInstance() : IncomingMessageStore</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>530</x>
+      <y>180</y>
+      <w>90</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+&lt;&lt;extends&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;120.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>400</x>
+      <y>160</y>
+      <w>270</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>ConcurrentLinkedQueue&lt;String&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
