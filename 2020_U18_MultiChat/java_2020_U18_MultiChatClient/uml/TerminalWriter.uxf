@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>180</x>
+      <y>100</y>
+      <w>420</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;final class&gt;&gt;
+edu.bbq.u18.chat.client.view.terminal::TerminalWriter
+--
+_-instance : TerminalWriter_
+--
+-TerminalWriter() : Singleton
+--
+_+getInstance() : TerminalWriter_
++write()</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

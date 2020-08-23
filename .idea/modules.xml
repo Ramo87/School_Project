@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/2020_U18_GeneralCommon/java_2020_U18_GeneralCommon/java_2020_U18_GeneralCommon.iml" filepath="$PROJECT_DIR$/2020_U18_GeneralCommon/java_2020_U18_GeneralCommon/java_2020_U18_GeneralCommon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/2020_U18_JavaKnowledge/java_2020_U18_JavaKnowledge/java_2020_U18_JavaKnowledge.iml" filepath="$PROJECT_DIR$/2020_U18_JavaKnowledge/java_2020_U18_JavaKnowledge/java_2020_U18_JavaKnowledge.iml" />
+      <module fileurl="file://$PROJECT_DIR$/2020_U18_MultiChat/java_2020_U18_MultiChatClient/java_2020_U18_MultiChatClient.iml" filepath="$PROJECT_DIR$/2020_U18_MultiChat/java_2020_U18_MultiChatClient/java_2020_U18_MultiChatClient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/2020_U18_MultiChat/java_2020_U18_MultiChatCommon/java_2020_U18_MultiChatCommon.iml" filepath="$PROJECT_DIR$/2020_U18_MultiChat/java_2020_U18_MultiChatCommon/java_2020_U18_MultiChatCommon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/2020_U18_MultiChat/java_2020_U18_MultiChatServer/java_2020_U18_MultiChatServer.iml" filepath="$PROJECT_DIR$/2020_U18_MultiChat/java_2020_U18_MultiChatServer/java_2020_U18_MultiChatServer.iml" />
+    </modules>
+  </component>
+</project>

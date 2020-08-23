@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>50</x>
+      <y>130</y>
+      <w>530</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;class&gt;&gt;
+edu.bbq.u18.chat.server.client.ClientServerConnectionHandler
+--
+_-connReader : BufferedReader_
+_-connWriter : BufferedWriter_
+_-instance : ClientServerCOnnectionHandler_
+--
+-ClientServerConnectionHandler() : Singleton
+_-startInstance()_
+_-hasInstance() : boolean_
++run() &lt;&lt;override&gt;&gt;
+_+sendMessageToServer(messageText : String)_
+-receiveMessageFromServer()
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>400</x>
+      <y>20</y>
+      <w>160</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>java.lang.Thread</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>380</x>
+      <y>40</y>
+      <w>130</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+&lt;&lt;extends&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;90.0;60.0;10.0</additional_attributes>
+  </element>
+</diagram>

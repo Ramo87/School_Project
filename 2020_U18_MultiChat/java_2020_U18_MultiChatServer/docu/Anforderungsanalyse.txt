@@ -1,0 +1,20 @@
+Zielsetzung bzgl. Serverfunktionalität
+-- 
+- Client- / Verbindungsanfragen entgegennehmen und verarbeiten
+
+Funktionale Anforderungen
+..
+- Start von Kommandozeile als Dienst (eventuell automatisiert)
+- mehrere Verbindungen verwalten (1 Server : n Clients) (Stichwort "Kardinalität")
+- Terminalausgabe zu Zwecken des Debuggings (eventuell Logging)
+- Nickname
+- [Kann] DB-Anbindung
+- Beenden - Kontrolliert (Command & Control, "C&C") <- über Chat-Command -> Nur der User/Client, der den Server gestartet hat, darf ihn auch beenden!
+
+Nichtfunktionale Anforderungen
+--
+Zuverlässigkeit
+- soll bei System-Absturz/ Neustart automatisch gestartet werden
+...
+...
+s. https://de.wikipedia.org/wiki/Lastenheft#Aufbau sowie "Insel" (?)

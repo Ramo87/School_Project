@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>9</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>144</x>
+      <y>162</y>
+      <w>414</w>
+      <h>270</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;final class&gt;&gt;
+edu.bbq.u18.chat.client.control::ClientServerMessageReceiver
+--
+instance : ClientServerMessageReceiver
+--
+-CleintServerMessage() : Singleton
+_+getInstance() : ClientServerMEssageReceiver_
++receiveAuthorizationFromServer()
++startAutoReceiving()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>648</x>
+      <y>162</y>
+      <w>153</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>java.lang.Thread</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>504</x>
+      <y>180</y>
+      <w>207</w>
+      <h>135</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+&lt;&lt;extends&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;130.0;210.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>153</x>
+      <y>297</y>
+      <w>396</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Inner class&gt;&gt;
+AutoClientMessageReceiver
+--
+-AutoClientMessageReceiver
++receiveMessageFromServer()
++run()</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

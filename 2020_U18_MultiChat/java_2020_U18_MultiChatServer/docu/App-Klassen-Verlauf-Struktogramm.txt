@@ -1,0 +1,6 @@
+edu.bbq.u18.chat.server.Start
+-> edu.bbq.u18.chat.server.SETTINGS
+	-> edu.bbq.u18.chat.server.Configurations
+		-> edu.bbq.u18.chat.server.Arguments
+			-> edu.bbq.u18.chat.server.Server
+			(rennt & wartet auf Kommunikationsanfragen)
