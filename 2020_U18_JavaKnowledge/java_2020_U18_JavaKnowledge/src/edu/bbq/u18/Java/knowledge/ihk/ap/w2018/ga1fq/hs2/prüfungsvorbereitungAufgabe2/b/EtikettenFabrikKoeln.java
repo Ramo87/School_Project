@@ -12,13 +12,22 @@ public class EtikettenFabrikKoeln extends EtikettenFabrik{
     @Override
     protected TeeEtikett fabrikMethode(String name){
         switch(name) {
-            case "Brochial":
+            case "Bronchial":
                 return new KoelnerBronchialTeeEtikett();
             case "Magen":
                 return new KoelnerMagenTeeEtikett();
             default:
-                throw new IllegalArgumentException("Case not handled!");
+                throw new IllegalArgumentException( "Case not handled!" );
         }
     }
-
 }
+
+
+/** wenn tzp gleich "Bronchial", dann new KölnerBronchialTeeEtikett()
+ *...
+ *
+ * ende
+ * Rückgaben : etikett
+ * SELECT typ
+ *  CASE "Bronchial" :
+ * */

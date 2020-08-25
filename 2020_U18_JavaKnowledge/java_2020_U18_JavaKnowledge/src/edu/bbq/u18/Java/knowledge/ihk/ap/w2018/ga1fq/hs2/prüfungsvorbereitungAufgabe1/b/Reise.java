@@ -6,7 +6,7 @@ package edu.bbq.u18.Java.knowledge.ihk.ap.w2018.ga1fq.hs2.prüfungsvorbereitungA
 public class Reise {
     protected StornoAlgoritmus stornoAlgoritmus;
 
-    public void setStornoAlgoritmus(){
+    public void setStornoAlgoritmus(StornoAlgoritmus stornoAlgoritmus){
 
     }
 

@@ -16,4 +16,6 @@ public abstract class TeeEtikett {
     public void druckeEtikett(){}
 
     public abstract double getPreis();
+
+
 }

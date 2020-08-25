@@ -20,8 +20,6 @@ public abstract class Reise  {
         return 0;
     }
 
-    public double preisBerechnen( double preis){
-        return 0;
-    }
+    public abstract double preisBerechnen( double preis);
 
 }

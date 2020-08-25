@@ -9,7 +9,7 @@ public class KoelnerMagenTeeEtikett extends TeeEtikett {
 
     public KoelnerMagenTeeEtikett(String name, String[][] zutaten){
         super.name = name;
-        super.zutaten = zutaten;
+        this.zutaten = zutaten;
     }
 
     @Override

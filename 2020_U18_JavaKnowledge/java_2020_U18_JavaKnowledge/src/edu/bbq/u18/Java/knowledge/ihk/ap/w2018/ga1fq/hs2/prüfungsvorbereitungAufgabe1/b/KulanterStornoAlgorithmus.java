@@ -9,6 +9,7 @@ public class KulanterStornoAlgorithmus implements StornoAlgoritmus {
 
     }
 
+    @Override
     public double stornoBerechnen(Reise reise){
       return 0;
     }

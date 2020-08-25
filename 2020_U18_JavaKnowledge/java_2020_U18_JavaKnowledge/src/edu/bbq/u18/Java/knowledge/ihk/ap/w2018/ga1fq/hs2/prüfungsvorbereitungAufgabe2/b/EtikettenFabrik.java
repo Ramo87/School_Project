@@ -7,11 +7,17 @@ import edu.bbq.u18.Java.knowledge.ihk.ap.w2018.ga1fq.hs2.prüfungsvorbereitungAu
  */
 public abstract class EtikettenFabrik {
 
-    public TeeEtikett erstelleEtikett(String name){
-        TeeEtikett teeEttikett = fabrikMethode(name);
-        teeEttikett.berechneVerfallsDatum();
-        return teeEttikett;
+    public TeeEtikett erstelleEtikett(String typ){
+        TeeEtikett teeEtikett = fabrikMethode(typ);
+        teeEtikett.berechneVerfallsDatum();
+        return teeEtikett;
     }
 
-    protected abstract TeeEtikett fabrikMethode(String teeEtikett);
+    protected abstract TeeEtikett fabrikMethode(String typ);
+
 }
+
+/**
+ *
+ *
+ * */
